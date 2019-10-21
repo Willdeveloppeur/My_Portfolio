@@ -1,0 +1,14 @@
+@media screen and (max-width: 600px) {
+    .head{
+        background: url("fond3.jpg");
+        width: 99vw;
+        max-height: 30vh;
+
+    }
+    h1{
+        margin-bottom: 0;
+    }
+    h2{
+        margin-top: 25vh;
+    }
+}
