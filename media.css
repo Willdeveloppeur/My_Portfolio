@@ -1,14 +1,29 @@
-@media screen and (max-width: 600px) {
-    .head{
+/* @media screen and (max-width: 600px) {
+    .head {
+        position: fixed;
         background: url("fond3.jpg");
-        width: 99vw;
-        max-height: 30vh;
+        /* width: 99vw; */
 
-    }
-    h1{
-        margin-bottom: 0;
-    }
-    h2{
-        margin-top: 25vh;
-    }
+display: flex;
+flex-direction: column;
+
+/* min-height: 20vh; */
+
+max-height: 20vh;
+
 }
+h1 {
+    margin-bottom: 0;
+}
+h2 {
+    padding-top: 2%;
+    margin-top: 5vh;
+    color: rgb(255, 255, 255);
+    font-family: 'Clicker Script', cursive;
+    font-size: 13vw;
+    margin-left: 30%;
+    text-shadow: 6px 7px 13px rgba(95, 206, 183, 0.79);
+}
+
+}
+*/

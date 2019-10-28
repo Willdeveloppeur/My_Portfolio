@@ -12,104 +12,60 @@
     <title>Wilfried ROLLAND</title>
 </head>
 
-<body id='nav'>
+<body>
+
+    <!-- <div id="nav"></div>
     <nav class="nav">
         <a href="#nav">Accueil</a>
-        <a href="#friseId">A propos</a>
-        <a href="#friseProjets">Projets</a>
-        <a href="#friseLogo">Compétences</a>
+        <a href="#pres">A propos</a>
+        <a href="projets.html" target="_blanck">Projets</a>
+        <a href="#logo">Compétences</a>
         <a href="mailto:wilfried.rolland.dev@gmail.com">Me contacter</a>
-    </nav>
+    </nav> -->
     <div class="head">
-        <h1>Will.Dev</h1>
-        <!-- <p>Développeur Web Junior</p> -->
-        <!-- <h2>Wilfried ROLLAND </h2> -->
-       
+        <h2>Will.Dev</h2>
+        <h1>Wilfried ROLLAND : Développeur web Junior</h1>
     </div>
-
-    <img id='friseId' src="frise.jpg" alt="">
-
-    <div id="pres">
-        <img id="id" src="photo.jpg" alt="Id Wilfried ROLLAND ">
-        
-        <p>Actuellement en formation de
-            Développeur Web Fullstack avec l'organisme SIMPON.CO Clermont-ferrand,
-            je souhaite faire aboutir ma reconversion
-            professionnelle au sein d'une société pour
-            laquelle je pourrais apporter mon savoir
-            faire ainsi que les différentes softs skills
-            acquises ces dernières années.
-        </p>
-    </div>
-
-    <img id='friseProjets' src="frise.jpg" alt="">
-
-    <div id="projects">
-        <div id="landing">
-            <a href="landingPage.jpg" target="_blank"><img src="projets\landpage1.png"
-                    alt="Landing page project"></a>
-            <a href="landingPage.jpg" target="_blank"><img src="projets\landpage2.png"
-                    alt="Landing page project"></a>
-            <a href="landingPage.jpg" target="_blank"><img src="projets\landpage3.png"
-                    alt="Landing page project"></a>
-        </div>
-        <div class="landpara">
-            <p><span> Landing page :</span> <br/>Création d'une landing page à partir d'un wireframe graphique.
-                Version desktop et mobile. Projet en binome.
-            </p>
-        </div>
-
-
-
-
-        <div class="quizgame">
-            <a href="projets\quiz1.png" target="_blank"><img src="projets\quiz1.png" alt="Projet Qui Game"></a>
-            <a href="projets\quiz2.png" target="_blank"><img src="projets\quiz2.png" alt="Projet Qui Game"></a>
-            <a href="projets\quiz3.png" target="_blank"><img src="projets\quiz3.png" alt="Projet Qui Game"></a>
-            <a href="projets\quiz4.png" target="_blank"><img src="projets\quiz4.png" alt="Projet Qui Game"></a>
-        </div>
-        <div class="quizpara">
-            <p><span>Projet Game en javascript :</span> <br/>Projet mené en solo avec comme consigne de créer un jeu
-                en Javascript. Pour ma part, ce sera un quiz de culture générale !!
-            </p>
-        </div>
-
-        <div class="chatbot">
-            <a href="projets\chatbot1.png" target="_blank"><img src="projets\chatbot1.png"
-                    alt="projet chabot"></a>
-            <a href="projets\chatbot2.png" target="_blank"><img src="projets\chatbot2.png"
-                    alt="projet chabot"></a>
-            <a href="projets\chatbot3.png" target="_blank"><img src="projets\chatbot3.png"
-                    alt="projet chabot"></a>
-            <a href="projets\chatbot4.png" target="_blank"><img src="projets\chatbot4.png"
-                    alt="projet chabot"></a>
-        </div>
-        <div class="chatpara">
-            <p><span>Projet ChatBot :</span> <br/>Création d'un chatbot avec réponse automatique du Bot.
-                Mini projet encore en construction : finalement,
-                il ne sera jamais fini tant que j'aurais des idées !!!
-            </p>
-        </div>
-    </div>
-
-    <img id='friseLogo' src="frise.jpg" alt="">
 
     <div id="logo">
-        <img src="HTML.png" title="HTML" alt=" logo html" aria-label="HTML">
-        <img src="css.png" title="CSS" alt="logo css">
-        <img src="js.png" title="JAVASCRIPT" alt="logo javascript">
+        <img src="HTML.png" title="HTML" alt=" logo html">
+        <img src="css2.png" title="CSS" alt="logo css">
+        <img src="js2.png" title="JavaScript" alt="logo javascript">
+        <img src="symfony.png" title="Symfony" alt="logo symfony">
+        <img src="wordpress.png" title="WordPress" alt="logo wordpress">
         <img src="PHPmsql.png" title="PHP MYSQL" alt="logo php mysql">
-        <img src="github.png" title="GIT HUB" alt="logo github">
+        <a href="https://github.com/Willdeveloppeur" target="_blanck"><img src="github.png" title="Cliquez pour mon GIT HUB"
+                alt="logo github"></a>
     </div>
+    <section>
+        <div id="chatbot">
+            <h3>Bienvenue chez Will.Dev</h3>
+            <p id="help">(taper à tout moment "help" pour obtenir le menu)</p>
+            <div id="msg">
+                <p id="heure"></p>
+            </div>
+            <form id="form" onsubmit="return getAnswer(this)">
+                <input type="text" placeholder="Faîtes votre choix..." autocomplete="off" name="question"
+                    id="question" />
+                <input type="submit" name="submit" value="Envoi" />
+            </form>
+        </div>
+
+    </section>
+
+
+
+
 
     <script src="script.js"></script>
 </body>
 <footer class="footer">
     <nav>
-        <a href="mailto:wilfried.rolland.dev@gmail.com">Contact</a>
-        <a href="/home/will/wilfriedRolland/portfolio/portfolio.octobre/Wilfried ROLLAND CV.pdf" target="blanck">CV Format PDF</a>
-        <img id='opquast' title='Certification OPQUAST Validée' src="opquast.jpg" alt="logo opquast">
 
+        <a href="opquast.pdf" target=_blanck><img id='opquast' title='Certification OPQUAST Validée' src="opquast.jpg"
+                alt="logo opquast"></a>
+        <a href="https://www.facebook.com/wilfried.rolland.dev" target=_blanck><img src="facebook.png" alt=""></a>
+        <a href="https://www.linkedin.com/in/wilfried-rolland/" target=_blanck><img src="linkedin.png" alt=""></a>
     </nav>
 </footer>
 

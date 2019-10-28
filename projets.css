@@ -1,0 +1,122 @@
+html {
+    color: rgb(0, 0, 0);
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    /* background: rgb(21, 77, 87); */
+    scroll-behavior: smooth;
+    background: url("fond3.jpg");
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+#cross{
+    cursor: pointer;
+    height: 35px;
+}
+h2{
+    background-color: #fff;
+    text-align: center;
+    font-size: 2vw;
+}
+/* nav fixed on top*/
+
+.nav {
+    z-index: 100;
+    margin-left: 0;
+    width: 99vw;
+    position: fixed;
+    display: flex;
+    text-align: center;
+    background-color: #fff;
+    border-bottom: 1px solid black;
+    /* background: url('filigrane.jpg'); */
+}
+
+.nav a {
+    text-decoration: none;
+    border-left: 1px solid white;
+    padding: 0.8vw;
+    color: rgb(0, 0, 0);
+    font-size: 1.5vw;
+    width: 100%;
+    height: auto;
+    font-family: 'Lobster', cursive;
+    /* background-color: rgb(69, 9, 82); */
+}
+
+#projects {
+    padding-top: 10%;
+    text-align: center;
+    width: 99vw;
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+p{
+    background-color: #fff;
+}
+#projects img {
+    width: 20%;
+}
+
+#projects p {
+    font-family: 'Jomolhari', serif;
+    font-size: 1.5vw;
+    width: 50%;
+    margin-left: 25vw;
+}
+
+#projects span {
+    color: rgb(138, 4, 4);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#landing {
+    width: 100%;
+}
+
+#landing img {
+    opacity: 1;
+    margin: 1%;
+}
+
+#landing img:hover {
+    opacity: 0.5;
+}
+
+.quizgame {
+    width: 100%;
+}
+
+.quizgame img {
+    opacity: 1;
+    margin: 1%;
+    ;
+}
+
+.quizgame img:hover {
+    opacity: 0.5;
+}
+
+.chatbot {
+    width: 100%;
+}
+
+.chatbot img {
+    opacity: 1;
+    margin: 1%;
+    ;
+}
+
+.chatbot img:hover {
+    opacity: 0.5;
+}
+
+.landpara, .chatpara, .quizpara {
+    border-bottom: 4px solid black;
+}
