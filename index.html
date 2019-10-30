@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="">
+    <link href="https://fonts.googleapis.com/css?family=Caveat+Brush&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Clicker+Script|Lobster&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Jomolhari&display=swap" rel="stylesheet">
     <title>Wilfried ROLLAND</title>
@@ -22,6 +23,7 @@
         <a href="#logo">Compétences</a>
         <a href="mailto:wilfried.rolland.dev@gmail.com">Me contacter</a>
     </nav> -->
+    <div class="up">
     <div class="head">
         <h2>Will.Dev</h2>
         <h1>Wilfried ROLLAND : Développeur web Junior</h1>
@@ -34,20 +36,25 @@
         <img src="symfony.png" title="Symfony" alt="logo symfony">
         <img src="wordpress.png" title="WordPress" alt="logo wordpress">
         <img src="PHPmsql.png" title="PHP MYSQL" alt="logo php mysql">
-        <a href="https://github.com/Willdeveloppeur" target="_blanck"><img src="github.png" title="Cliquez pour mon GIT HUB"
-                alt="logo github"></a>
+        <a href="https://github.com/Willdeveloppeur" target="_blanck"><img src="github.png"
+                title="Cliquez pour mon GIT HUB" alt="logo github"></a>
     </div>
+</div>
     <section>
         <div id="chatbot">
             <h3>Bienvenue chez Will.Dev</h3>
             <p id="help">(taper à tout moment "help" pour obtenir le menu)</p>
             <div id="msg">
                 <p id="heure"></p>
+
+
             </div>
+            <p id="bot-typing"></p>
             <form id="form" onsubmit="return getAnswer(this)">
                 <input type="text" placeholder="Faîtes votre choix..." autocomplete="off" name="question"
                     id="question" />
-                <input type="submit" name="submit" value="Envoi" />
+                <input type="submit" name="submit" id="submit" value="Envoi" />
+
             </form>
         </div>
 
@@ -58,15 +65,15 @@
 
 
     <script src="script.js"></script>
-</body>
-<footer class="footer">
-    <nav>
 
+    <div class="footer">
+        <a href="https://www.facebook.com/wilfried.rolland.dev" target=_blanck><img src="facebook.png" alt=""></a>
+        <a href="mailto:wilfried.rolland.dev@gmail.com" target=_blanck><img src="Gmail.png" alt=""></a>
         <a href="opquast.pdf" target=_blanck><img id='opquast' title='Certification OPQUAST Validée' src="opquast.jpg"
                 alt="logo opquast"></a>
-        <a href="https://www.facebook.com/wilfried.rolland.dev" target=_blanck><img src="facebook.png" alt=""></a>
         <a href="https://www.linkedin.com/in/wilfried-rolland/" target=_blanck><img src="linkedin.png" alt=""></a>
-    </nav>
-</footer>
+
+    </div>
+</body>
 
 </html>

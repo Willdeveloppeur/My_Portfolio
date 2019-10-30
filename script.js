@@ -88,7 +88,7 @@ function botAnswer() {
         node.className = "rep";
         document.getElementById("msg").scrollTop = document.getElementById('msg').scrollHeight;
         giveTimeContact();
-        
+
 
     } else if (question.toLowerCase() == "help" || question.toLowerCase() == "au secours") {
         botName();
@@ -110,15 +110,15 @@ function botAnswer() {
         document.getElementById("msg").appendChild(node4);
         timeSet();
         document.getElementById("msg").appendChild(node2);
-        node.className = "rep";
-        node5.className = "rep";
-        node3.className = "rep";
-        node4.className = "rep";
+        node.className = "rep3";
+        node5.className = "rep3";
+        node3.className = "rep3";
+        node4.className = "rep3";
         document.getElementById("msg").scrollTop = document.getElementById('msg').scrollHeight;
-    
-    
-    
-    }else if (question.toLowerCase() === "ca va?" || question.toLowerCase() === "la forme?" || question.toLowerCase() === "ca farte?" || question.toLowerCase() === "roots?") {
+
+
+
+    } else if (question.toLowerCase() === "ca va?" || question.toLowerCase() === "la forme?" || question.toLowerCase() === "ca farte?" || question.toLowerCase() === "roots?") {
         botName();
         node = document.createElement("DIV");
         var textnode = document.createTextNode(fine);
@@ -144,31 +144,31 @@ function giveTime() {
     setTimeout(botAnswer, 1000);
 }
 //function Timeout for projets
-function project(){
+function project() {
     window.open("projets.html");
 }
-function giveTimeProject(){
+function giveTimeProject() {
     setTimeout(project, 2500);
 }
 //function Timeout for quiz
-function quiz(){
+function quiz() {
     window.open("quizGame/index.html");
 }
-function giveTimeQuiz(){
+function giveTimeQuiz() {
     setTimeout(quiz, 2500);
 }
 //function Timeout for CV
-function cv(){
+function cv() {
     window.open("Will_Dev.html");
 }
-function giveTimeCv(){
+function giveTimeCv() {
     setTimeout(cv, 2500);
 }
 //function Timeout for contact
-function contact(){
+function contact() {
     window.location.href = "mailto:wilfried.rolland.dev@gmail.com";
 }
-function giveTimeContact(){
+function giveTimeContact() {
     setTimeout(contact, 2500);
 }
 
@@ -206,7 +206,7 @@ function userName() {
     node3.className = "userName";
 }
 // searchWelcome();
-setTimeout(searchWelcome, 3000);
+setTimeout(searchWelcome, 2500);
 
 function searchWelcome() {
     // setTimeout(welcome, 1000);
@@ -292,8 +292,8 @@ function choiceFour() {
 
 
 // fermeture de fenetre
-closeWindow();
-function closeWindow(){
+
+function closeWindow() {
     var x = document.getElementById('cross');
     x.addEventListener('click', twFermer());
 }
@@ -301,4 +301,69 @@ function closeWindow(){
 
 function twFermer() {
     window.close();
-  }
+}
+
+
+//function for user is typing with point/span
+
+function animate() {
+    // document.getElementById('bot-typing').style.color = "green";
+    document.getElementById('dot1').animate([
+        { transform: 'translateY(0px)' },
+        { transform: 'translateY(-5px)' },
+        { transform: 'translateY(0px' }],
+        {
+            duration: 700,
+            iterations: Infinity,
+        })
+    document.getElementById('dot1').style.color = "red";
+    document.getElementById('dot2').animate([
+        { transform: 'translateY(0px)' },
+        { transform: 'translateY(-5px)' },
+        { transform: 'translateY(0px' }],
+        {
+            duration: 700,
+            iterations: Infinity,
+            delay: 100
+        })
+    document.getElementById('dot2').style.color = "red";
+    document.getElementById('dot3').animate([
+        { transform: 'translateY(0px)' },
+        { transform: 'translateY(-5px)' },
+        { transform: 'translateY(0px' }],
+        {
+            duration: 700,
+            iterations: Infinity,
+            delay: 200
+        })
+    document.getElementById('dot3').style.color = "red";
+}
+
+
+
+var input = document.getElementById('question'); /* on attribue le premier sélecteur 'input' du code HTML à la variable input */
+input.addEventListener('input', isTyping); /* on attribue à ce sélecteur un évenement, qui se déclenche lorsqu'il y a une action effectuée sur un input. Cette action est la fonction "isTyping" */
+function isTyping() {
+    document.getElementById('bot-typing').style.visibility = "visible"; /* Si l'utilisateur est en train de modifier l'input en y ajoutant du texte, alors le paragraphe devient visible */
+    document.getElementById('bot-typing').innerHTML = "Je vous écoute <span>.</span><span>.</span><span>.</span>"; /* On lui attribue la valeur "You are typing" */
+    document.getElementById('bot-typing').style.fontSize = "20px";
+    document.querySelector("span").id = "dot1";
+    document.querySelector("span+span").id = "dot2";
+    document.querySelector("span+span+span").id = "dot3";
+    input.removeEventListener('input', isTyping); /* on retire l'evenement à chaque changement dans l'input pour éviter un restart de la fonction à chaque modifications */
+    animate();
+
+}
+
+// bot-typing visibility on evenement
+var isEmpty = document.getElementById('question');
+var ifSubmit = document.getElementById('form');
+isEmpty.addEventListener('input', visible);
+ifSubmit.addEventListener('submit', visible);
+function visible() {
+    if (isEmpty.value == "" || ifSubmit.onsubmit == true) {
+        document.getElementById('bot-typing').style.visibility = "hidden";
+    } else {
+        document.getElementById('bot-typing').style.visibility = "visible";
+    }
+}

@@ -1,13 +1,13 @@
-/* @media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
     .head {
         position: fixed;
         background: url("fond3.jpg");
-        /* width: 99vw; */
+        width: 99vw;
 
 display: flex;
 flex-direction: column;
 
-/* min-height: 20vh; */
+min-height: 20vh;
 
 max-height: 20vh;
 
@@ -21,9 +21,8 @@ h2 {
     color: rgb(255, 255, 255);
     font-family: 'Clicker Script', cursive;
     font-size: 13vw;
-    margin-left: 30%;
+    margin-left: 20%;
     text-shadow: 6px 7px 13px rgba(95, 206, 183, 0.79);
 }
 
 }
-*/
